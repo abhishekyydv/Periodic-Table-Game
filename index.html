@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Periodic Table Game</h1>
+      </header>
+      <section class="controls">
+        <button id="start-game">Start Game</button>
+        <button id="end-game">End Game</button>
+      </section>
+      <section class="display">
+        <h2 id="element-name">Click Start Game</h2>
+      </section>
+      <section class="score">
+        <p>Score: <span id="score">0</span></p>
+      </section>
+      <section class="periodic-table-container">
+        <table id="periodic-table">
+          <tr>
+            <td class="element" data-symbol="H" data-name="Hydrogen">
+              H<br />1
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="element" data-symbol="He" data-name="Helium">
+              He<br />2
+            </td>
+          </tr>
+          <tr>
+            <td class="element" data-symbol="Li" data-name="Lithium">
+              Li<br />3
+            </td>
+            <td class="element" data-symbol="Be" data-name="Beryllium">
+              Be<br />4
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="element" data-symbol="B" data-name="Boron">B<br />5</td>
+            <td class="element" data-symbol="C" data-name="Carbon">C<br />6</td>
+            <td class="element" data-symbol="N" data-name="Nitrogen">
+              N<br />7
+            </td>
+            <td class="element" data-symbol="O" data-name="Oxygen">O<br />8</td>
+            <td class="element" data-symbol="F" data-name="Fluorine">
+              F<br />9
+            </td>
+            <td class="element" data-symbol="Ne" data-name="Neon">
+              Ne<br />10
+            </td>
+          </tr>
+          <tr>
+            <td class="element" data-symbol="Na" data-name="Sodium">
+              Na<br />11
+            </td>
+            <td class="element" data-symbol="Mg" data-name="Magnesium">
+              Mg<br />12
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="element" data-symbol="Al" data-name="Aluminum">
+              Al<br />13
+            </td>
+            <td class="element" data-symbol="Si" data-name="Silicon">
+              Si<br />14
+            </td>
+            <td class="element" data-symbol="P" data-name="Phosphorus">
+              P<br />15
+            </td>
+            <td class="element" data-symbol="S" data-name="Sulfur">
+              S<br />16
+            </td>
+            <td class="element" data-symbol="Cl" data-name="Chlorine">
+              Cl<br />17
+            </td>
+            <td class="element" data-symbol="Ar" data-name="Argon">
+              Ar<br />18
+            </td>
+          </tr>
+          <tr>
+            <td class="element" data-symbol="K" data-name="Potassium">
+              K<br />19
+            </td>
+            <td class="element" data-symbol="Ca" data-name="Calcium">
+              Ca<br />20
+            </td>
+            <td class="element" data-symbol="Sc" data-name="Scandium">
+              Sc<br />21
+            </td>
+            <td class="element" data-symbol="Ti" data-name="Titanium">
+              Ti<br />22
+            </td>
+            <td class="element" data-symbol="V" data-name="Vanadium">
+              V<br />23
+            </td>
+            <td class="element" data-symbol="Cr" data-name="Chromium">
+              Cr<br />24
+            </td>
+            <td class="element" data-symbol="Mn" data-name="Manganese">
+              Mn<br />25
+            </td>
+            <td class="element" data-symbol="Fe" data-name="Iron">
+              Fe<br />26
+            </td>
+            <td class="element" data-symbol="Co" data-name="Cobalt">
+              Co<br />27
+            </td>
+            <td class="element" data-symbol="Ni" data-name="Nickel">
+              Ni<br />28
+            </td>
+            <td class="element" data-symbol="Cu" data-name="Copper">
+              Cu<br />29
+            </td>
+            <td class="element" data-symbol="Zn" data-name="Zinc">
+              Zn<br />30
+            </td>
+            <td class="element" data-symbol="Ga" data-name="Gallium">
+              Ga<br />31
+            </td>
+            <td class="element" data-symbol="Ge" data-name="Germanium">
+              Ge<br />32
+            </td>
+            <td class="element" data-symbol="As" data-name="Arsenic">
+              As<br />33
+            </td>
+            <td class="element" data-symbol="Se" data-name="Selenium">
+              Se<br />34
+            </td>
+            <td class="element" data-symbol="Br" data-name="Bromine">
+              Br<br />35
+            </td>
+            <td class="element" data-symbol="Kr" data-name="Krypton">
+              Kr<br />36
+            </td>
+          </tr>
+          <tr>
+            <td class="element" data-symbol="Rb" data-name="Rubidium">
+              Rb<br />37
+            </td>
+            <td class="element" data-symbol="Sr" data-name="Strontium">
+              Sr<br />38
+            </td>
+            <td class="element" data-symbol="Y" data-name="Yttrium">
+              Y<br />39
+            </td>
+            <td class="element" data-symbol="Zr" data-name="Zirconium">
+              Zr<br />40
+            </td>
+            <td class="element" data-symbol="Nb" data-name="Niobium">
+              Nb<br />41
+            </td>
+            <td class="element" data-symbol="Mo" data-name="Molybdenum">
+              Mo<br />42
+            </td>
+            <td class="element" data-symbol="Tc" data-name="Technetium">
+              Tc<br />43
+            </td>
+            <td class="element" data-symbol="Ru" data-name="Ruthenium">
+              Ru<br />44
+            </td>
+            <td class="element" data-symbol="Rh" data-name="Rhodium">
+              Rh<br />45
+            </td>
+            <td class="element" data-symbol="Pd" data-name="Palladium">
+              Pd<br />46
+            </td>
+            <td class="element" data-symbol="Ag" data-name="Silver">
+              Ag<br />47
+            </td>
+            <td class="element" data-symbol="Cd" data-name="Cadmium">
+              Cd<br />48
+            </td>
+            <td class="element" data-symbol="In" data-name="Indium">
+              In<br />49
+            </td>
+            <td class="element" data-symbol="Sn" data-name="Tin">Sn<br />50</td>
+            <td class="element" data-symbol="Sb" data-name="Antimony">
+              Sb<br />51
+            </td>
+            <td class="element" data-symbol="Te" data-name="Tellurium">
+              Te<br />52
+            </td>
+            <td class="element" data-symbol="I" data-name="Iodine">
+              I<br />53
+            </td>
+            <td class="element" data-symbol="Xe" data-name="Xenon">
+              Xe<br />54
+            </td>
+          </tr>
+          <>
+            <td class="element" data-symbol="Cs" data-name="Cesium">
+              Cs<br />55
+            </td>
+            <td class="element" data-symbol="Ba" data-name="Barium">
+              Ba<br />56
+            </td>
+
+            <td
+              class="element lanthanoids-skip"
+              colspan="1"
+              data-description="Lanthanoids (57-71) are a series of chemical elements in the periodic table with similar properties. They are often used in high-tech applications and are known for their magnetic properties."
+            >
+              <div class="element-name">57-71</div>
+              <div class="element-name">Lanthanoids</div>
+            </td>
+
+            <td class="element" data-symbol="Hf" data-name="Hafnium">
+              Hf<br />72
+            </td>
+            <td class="element" data-symbol="Ta" data-name="Tantalum">
+              Ta<br />73
+            </td>
+            <td class="element" data-symbol="W" data-name="Tungsten">
+              W<br />74
+            </td>
+            <td class="element" data-symbol="Re" data-name="Rhenium">
+              Re<br />75
+            </td>
+            <td class="element" data-symbol="Os" data-name="Osmium">
+              Os<br />76
+            </td>
+            <td class="element" data-symbol="Ir" data-name="Iridium">
+              Ir<br />77
+            </td>
+            <td class="element" data-symbol="Pt" data-name="Platinum">
+              Pt<br />78
+            </td>
+            <td class="element" data-symbol="Au" data-name="Gold">
+              Au<br />79
+            </td>
+            <td class="element" data-symbol="Hg" data-name="Mercury">
+              Hg<br />80
+            </td>
+            <td class="element" data-symbol="Tl" data-name="Thallium">
+              Tl<br />81
+            </td>
+            <td class="element" data-symbol="Pb" data-name="Lead">
+              Pb<br />82
+            </td>
+            <td class="element" data-symbol="Bi" data-name="Bismuth">
+              Bi<br />83
+            </td>
+            <td class="element" data-symbol="Po" data-name="Polonium">
+              Po<br />84
+            </td>
+            <td class="element" data-symbol="At" data-name="Astatine">
+              At<br />85
+            </td>
+            <td class="element" data-symbol="Rn" data-name="Radon">
+              Rn<br />86
+            </td>
+          </tr>
+          <tr>
+            <td class="element" data-symbol="Fr" data-name="Francium">
+              Fr<br />87
+            </td>
+            <td class="element" data-symbol="Ra" data-name="Radium">
+              Ra<br />88
+            </td>
+            <td
+        class="element actinoids-skip"
+        colspan="1"
+        data-description="Actinoids (89-103) are a series of chemical elements in the periodic table with similar properties. They are known for their radioactive characteristics and are used in various nuclear applications."
+      >
+        <div class="element-name">89-103</div>
+        <div class="element-name">Actinoids</div>
+      </td>
+            
+            <td class="element" data-symbol="Rf" data-name="Rutherfordium">
+              Rf<br />104
+            </td>
+            <td class="element" data-symbol="Db" data-name="Dubnium">
+              Db<br />105
+            </td>
+            <td class="element" data-symbol="Sg" data-name="Seaborgium">
+              Sg<br />106
+            </td>
+            <td class="element" data-symbol="Bh" data-name="Bohrium">
+              Bh<br />107
+            </td>
+            <td class="element" data-symbol="Hs" data-name="Hassium">
+              Hs<br />108
+            </td>
+            <td class="element" data-symbol="Mt" data-name="Meitnerium">
+              Mt<br />109
+            </td>
+            <td class="element" data-symbol="Ds" data-name="Darmstadtium">
+              Ds<br />110
+            </td>
+            <td class="element" data-symbol="Rg" data-name="Roentgenium">
+              Rg<br />111
+            </td>
+            <td class="element" data-symbol="Cn" data-name="Copernicium">
+              Cn<br />112
+            </td>
+            <td class="element" data-symbol="Nh" data-name="Nihonium">
+              Nh<br />113
+            </td>
+            <td class="element" data-symbol="Fl" data-name="Flerovium">
+              Fl<br />114
+            </td>
+            <td class="element" data-symbol="Mc" data-name="Moscovium">
+              Mc<br />115
+            </td>
+            <td class="element" data-symbol="Lv" data-name="Livermorium">
+              Lv<br />116
+            </td>
+            <td class="element" data-symbol="Ts" data-name="Tennessine">
+              Ts<br />117
+            </td>
+            <td class="element" data-symbol="Og" data-name="Oganesson">
+              Og<br />118
+            </td>
+          </tr>
+          <tr class="spacing-row">
+      <td class="empty" colspan="18"></td>
+      <!-- Add an empty cell to create space -->
+    </tr>
+    <tr>
+      <td colspan="3" class="lanthanoid-heading">Lanthanoids</td>
+      <td class="element" data-symbol="La" data-name="Lanthanum">
+              La<br />57
+            </td>
+            <td class="element" data-symbol="Ce" data-name="Cerium">
+              Ce<br />58
+            </td>
+            <td class="element" data-symbol="Pr" data-name="Praseodymium">
+              Pr<br />59
+            </td>
+            <td class="element" data-symbol="Nd" data-name="Neodymium">
+              Nd<br />60
+            </td>
+            <td class="element" data-symbol="Pm" data-name="Promethium">
+              Pm<br />61
+            </td>
+            <td class="element" data-symbol="Sm" data-name="Samarium">
+              Sm<br />62
+            </td>
+            <td class="element" data-symbol="Eu" data-name="Europium">
+              Eu<br />63
+            </td>
+            <td class="element" data-symbol="Gd" data-name="Gadolinium">
+              Gd<br />64
+            </td>
+            <td class="element" data-symbol="Tb" data-name="Terbium">
+              Tb<br />65
+            </td>
+            <td class="element" data-symbol="Dy" data-name="Dysprosium">
+              Dy<br />66
+            </td>
+            <td class="element" data-symbol="Ho" data-name="Holmium">
+              Ho<br />67
+            </td>
+            <td class="element" data-symbol="Er" data-name="Erbium">
+              Er<br />68
+            </td>
+            <td class="element" data-symbol="Tm" data-name="Thulium">
+              Tm<br />69
+            </td>
+            <td class="element" data-symbol="Yb" data-name="Ytterbium">
+              Yb<br />70
+            </td>
+            <td class="element" data-symbol="Lu" data-name="Lutetium">
+              Lu<br />71
+            </td>
+            <tr>
+      <td colspan="3" class="actinoid-heading">Actinoids</td>
+      <td class="element" data-symbol="Ac" data-name="Actinium">
+              Ac<br />89
+            </td>
+            <td class="element" data-symbol="Th" data-name="Thorium">
+              Th<br />90
+            </td>
+            <td class="element" data-symbol="Pa" data-name="Protactinium">
+              Pa<br />91
+            </td>
+            <td class="element" data-symbol="U" data-name="Uranium">
+              U<br />92
+            </td>
+            <td class="element" data-symbol="Np" data-name="Neptunium">
+              Np<br />93
+            </td>
+            <td class="element" data-symbol="Pu" data-name="Plutonium">
+              Pu<br />94
+            </td>
+            <td class="element" data-symbol="Am" data-name="Americium">
+              Am<br />95
+            </td>
+            <td class="element" data-symbol="Cm" data-name="Curium">
+              Cm<br />96
+            </td>
+            <td class="element" data-symbol="Bk" data-name="Berkelium">
+              Bk<br />97
+            </td>
+            <td class="element" data-symbol="Cf" data-name="Californium">
+              Cf<br />98
+            </td>
+            <td class="element" data-symbol="Es" data-name="Einsteinium">
+              Es<br />99
+            </td>
+            <td class="element" data-symbol="Fm" data-name="Fermium">
+              Fm<br />100
+            </td>
+            <td class="element" data-symbol="Md" data-name="Mendelevium">
+              Md<br />101
+            </td>
+            <td class="element" data-symbol="No" data-name="Nobelium">
+              No<br />102
+            </td>
+            <td class="element" data-symbol="Lr" data-name="Lawrencium">
+              Lr<br />103
+            </td>
+            </tr>
+        </table>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

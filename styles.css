@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading Styles */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Container Styles */
+#game-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Display Section Styles */
+#element-display {
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* Periodic Table Styles */
+.periodic-table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+#periodic-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#periodic-table td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#periodic-table td:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.element {
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 5px;
+}
+
+.metals {
+  background-color: #ffcccb;
+}
+
+.non-metals {
+  background-color: #add8e6;
+}
+
+.metalloids {
+  background-color: #90ee90;
+}
+
+.halogens {
+  background-color: #ffa07a;
+}
+
+.noble-gases {
+  background-color: #d3d3d3;
+}
+
+.alkali-metals {
+  background-color: #f08080;
+}
+
+.alkaline-earth-metals {
+  background-color: #98fb98;
+}
+
+/* Score Section Styles */
+#score {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+#periodic-table td {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#periodic-table td.correct {
+  background-color: lightgreen;
+  color: green;
+}
+
+#periodic-table td.wrong {
+  background-color: lightcoral;
+  color: red;
+}
+
+#periodic-table td:hover {
+  background-color: #f0f0f0;
+}
+
+#element-name {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#score {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#start-game,
+#end-game {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+#start-game:hover,
+#end-game:hover {
+  background-color: #0056b3;
+}
