@@ -139,6 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function endGame() {
     elementNameDisplay.textContent = `Game Over! Final Score: ${score}`;
+    score = 0; // Reset score
+    scoreDisplay.textContent = score; // Reset score display
     currentElement = null; // End game
     periodicTable.removeEventListener("click", checkAnswer); // Remove event listener
   }
