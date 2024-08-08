@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #e3ccb2;
   color: #333;
   text-align: center;
   margin: 0;
@@ -10,9 +10,9 @@ body {
 
 /* Heading Styles */
 header {
-  background-color: #4caf50;
-  color: white;
-  padding: 20px;
+  background-color: #355952;
+  color: #faef7c;
+  padding: 15px 15px;
   font-size: 2em;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,7 @@ button:hover {
 }
 
 /* Container Styles */
-#game-container {
+.container {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
@@ -49,10 +49,10 @@ button:hover {
 }
 
 /* Display Section Styles */
-#element-display {
+.display {
   font-size: 1.5em;
   padding: 10px;
-  margin: 20px 0;
+  margin: 15px 0;
   background-color: #ddd;
   border-radius: 5px;
 }
@@ -83,38 +83,20 @@ button:hover {
   cursor: pointer;
 }
 
+.non-clickable {
+  pointer-events: none; /* Prevents click events */
+  background-color: rgb(255, 255, 255);
+  border: white;
+}
+
+.non-clickable:hover {
+  background-color: rgb(255, 255, 255); /* Optional: keeps hover effect same */
+}
+
 .element {
   background-color: #f9f9f9;
   color: #333;
   border-radius: 5px;
-}
-
-.metals {
-  background-color: #ffcccb;
-}
-
-.non-metals {
-  background-color: #add8e6;
-}
-
-.metalloids {
-  background-color: #90ee90;
-}
-
-.halogens {
-  background-color: #ffa07a;
-}
-
-.noble-gases {
-  background-color: #d3d3d3;
-}
-
-.alkali-metals {
-  background-color: #f08080;
-}
-
-.alkaline-earth-metals {
-  background-color: #98fb98;
 }
 
 /* Score Section Styles */
@@ -135,21 +117,21 @@ button:hover {
 }
 
 #periodic-table td.correct {
-  background-color: lightgreen;
-  color: green;
+  background-color: rgb(19, 180, 19);
+  color: rgb(255, 255, 255);
 }
 
 #periodic-table td.wrong {
-  background-color: lightcoral;
-  color: red;
+  background-color: rgb(250, 7, 7);
+  color: rgb(255, 255, 255);
 }
 
 #periodic-table td:hover {
-  background-color: #f0f0f0;
+  background-color: #fbf5ae;
 }
 
 #element-name {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 20px;
 }
 
@@ -158,21 +140,15 @@ button:hover {
   margin-bottom: 20px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  margin: 10px;
-  cursor: pointer;
-}
-
 #start-game,
 #end-game {
-  background-color: #007bff;
+  margin-top: 2%;
+  background-color: #355952;
   color: white;
   border: none;
 }
 
 #start-game:hover,
 #end-game:hover {
-  background-color: #0056b3;
+  background-color: #5ea094;
 }
