@@ -50,11 +50,7 @@ button:hover {
 
 /* Display Section Styles */
 .display {
-  font-size: 1.5em;
-  padding: 10px;
-  margin: 15px 0;
-  background-color: #ddd;
-  border-radius: 5px;
+  font-size: 2em;
 }
 
 /* Periodic Table Styles */
