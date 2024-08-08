@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    
       <header>
         <h1>Periodic Table Game</h1>
       </header>
@@ -22,27 +22,28 @@
         <p>Score: <span id="score">0</span></p>
       </section>
       <section class="periodic-table-container">
+        <div class="container">
         <table id="periodic-table">
           <tr>
             <td class="element" data-symbol="H" data-name="Hydrogen">
               H<br />1
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
             <td class="element" data-symbol="He" data-name="Helium">
               He<br />2
             </td>
@@ -54,16 +55,16 @@
             <td class="element" data-symbol="Be" data-name="Beryllium">
               Be<br />4
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
             <td class="element" data-symbol="B" data-name="Boron">B<br />5</td>
             <td class="element" data-symbol="C" data-name="Carbon">C<br />6</td>
             <td class="element" data-symbol="N" data-name="Nitrogen">
@@ -84,16 +85,16 @@
             <td class="element" data-symbol="Mg" data-name="Magnesium">
               Mg<br />12
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
+            <td class="non-clickable"></td>
             <td class="element" data-symbol="Al" data-name="Aluminum">
               Al<br />13
             </td>
@@ -231,10 +232,8 @@
               Ba<br />56
             </td>
 
-            <td
-              class="element lanthanoids-skip"
+            <td class="non-clickable"
               colspan="1"
-              data-description="Lanthanoids (57-71) are a series of chemical elements in the periodic table with similar properties. They are often used in high-tech applications and are known for their magnetic properties."
             >
               <div class="element-name">57-71</div>
               <div class="element-name">Lanthanoids</div>
@@ -293,11 +292,9 @@
             <td class="element" data-symbol="Ra" data-name="Radium">
               Ra<br />88
             </td>
-            <td
-        class="element actinoids-skip"
-        colspan="1"
-        data-description="Actinoids (89-103) are a series of chemical elements in the periodic table with similar properties. They are known for their radioactive characteristics and are used in various nuclear applications."
-      >
+            <td class="non-clickable"
+        colspan="1">
+
         <div class="element-name">89-103</div>
         <div class="element-name">Actinoids</div>
       </td>
@@ -348,12 +345,12 @@
               Og<br />118
             </td>
           </tr>
-          <tr class="spacing-row">
-      <td class="empty" colspan="18"></td>
+          <tr class="non-clickable">
+      <td colspan="18"></td>
       <!-- Add an empty cell to create space -->
     </tr>
     <tr>
-      <td colspan="3" class="lanthanoid-heading">Lanthanoids</td>
+      <td colspan="3" class="non-clickable">Lanthanoids</td>
       <td class="element" data-symbol="La" data-name="Lanthanum">
               La<br />57
             </td>
@@ -400,7 +397,7 @@
               Lu<br />71
             </td>
             <tr>
-      <td colspan="3" class="actinoid-heading">Actinoids</td>
+      <td colspan="3" class="non-clickable">Actinoids</td>
       <td class="element" data-symbol="Ac" data-name="Actinium">
               Ac<br />89
             </td>
@@ -452,4 +449,4 @@
     </div>
     <script src="script.js"></script>
   </body>
-</html>
+              </html>
